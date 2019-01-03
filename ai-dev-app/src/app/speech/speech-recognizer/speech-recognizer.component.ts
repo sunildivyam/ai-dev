@@ -34,12 +34,12 @@ export class SpeechRecognizerComponent implements OnInit, OnDestroy {
     });
   }
 
-  start() {
-    this.speechService.start();
-  }
-
-  stop() {
-    this.speechService.stop();
+  toggleListen(): void {
+    if (!this.started) {
+      this.speechService.start();
+    } else {
+      this.speechService.stop();
+    }
   }
 
   ngOnDestroy(): void {
