@@ -1,0 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome  to {{ title }}!
+  </h1>
+  <ul>
+    <li *ngFor="let msg of messages">{{msg.transcript}}</li>
+  </ul>
+  <p>Speech recognition Engine</p>
+</div>
+<app-speech-recognizer></app-speech-recognizer>
+<router-outlet></router-outlet>
