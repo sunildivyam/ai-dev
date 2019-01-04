@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SpeechRecognizerComponent } from './speech-recognizer.component';
+import { RoboDevComponent } from './robo-dev.component';
 
-describe('SpeechRecognizerComponent', () => {
-  let component: SpeechRecognizerComponent;
-  let fixture: ComponentFixture<SpeechRecognizerComponent>;
+describe('RoboDevComponent', () => {
+  let component: RoboDevComponent;
+  let fixture: ComponentFixture<RoboDevComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SpeechRecognizerComponent ]
+      declarations: [ RoboDevComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SpeechRecognizerComponent);
+    fixture = TestBed.createComponent(RoboDevComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

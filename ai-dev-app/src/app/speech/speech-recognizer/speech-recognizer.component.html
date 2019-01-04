@@ -1,8 +1,0 @@
-<p>
-  speech-recognizer works!
-</p>
-<button (click)="toggleListen()">{{started? 'Stop Listening':'Start Listning'}}</button>
-<div class="label label-success" *ngIf="started">Listening...</div>
-<ul>
-  <li *ngFor="let msg of messages">{{msg.transcript}}</li>
-</ul>

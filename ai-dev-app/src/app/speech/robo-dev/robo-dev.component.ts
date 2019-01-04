@@ -1,13 +1,14 @@
-import { Component, OnInit, NgZone, OnDestroy } from '@angular/core';
-import { SpeechService } from '../speech.service';
+import { Component, OnInit, OnDestroy, NgZone } from '@angular/core';
 import { Subscription } from 'rxjs';
+import { SpeechService } from '../speech.service';
 
 @Component({
-  selector: 'app-speech-recognizer',
-  templateUrl: './speech-recognizer.component.html',
-  styleUrls: ['./speech-recognizer.component.scss']
+  selector: 'app-robo-dev',
+  templateUrl: './robo-dev.component.html',
+  styleUrls: ['./robo-dev.component.scss']
 })
-export class SpeechRecognizerComponent implements OnInit, OnDestroy {
+export class RoboDevComponent implements OnInit, OnDestroy {
+
   messages: any[];
   started: boolean;
   startedUnsubscribe$: Subscription;
@@ -46,4 +47,5 @@ export class SpeechRecognizerComponent implements OnInit, OnDestroy {
     this.startedUnsubscribe$.unsubscribe();
     this.messageUnsubscribe$.unsubscribe();
   }
+
 }

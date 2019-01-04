@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SpeechRecognizerComponent } from './speech-recognizer/speech-recognizer.component';
 import { SpeechService } from './speech.service';
+import { RoboDevComponent } from './robo-dev/robo-dev.component';
 
 @NgModule({
-  declarations: [SpeechRecognizerComponent],
+  declarations: [RoboDevComponent],
   providers: [SpeechService],
   imports: [
     CommonModule
   ],
-  exports: [SpeechRecognizerComponent]
+  exports: [RoboDevComponent]
 })
 export class SpeechModule { }

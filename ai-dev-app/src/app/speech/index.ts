@@ -1,3 +1,3 @@
 export { SpeechModule } from './speech.module';
 export { SpeechService } from './speech.service';
-export { SpeechRecognizerComponent } from './speech-recognizer/speech-recognizer.component';
+export { RoboDevComponent } from './robo-dev/robo-dev.component';
